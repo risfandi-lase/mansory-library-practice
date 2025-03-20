@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+
+}
+
+/* force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* ---- grid ---- */
+
+.grid {
+  background: #ddd;
+  gap: 20px;
+}
+
+/* clear fix */
+.grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+
+.grid-item {
+  float: left;
+  overflow: hidden;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.grid-item:active img {
+  transform: scale(1.05);
+  transition: 0.3s linear;
+}
+
+.popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.popup-image span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+  z-index: 100;
+}
+.popup-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid white;
+  border-radius: 5px;
+  width: 20%;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .popup-image img {
+    width: 72%;
+  }
+}
+
+.logo img {
+  width: 90px;
+  height: 80px;
+  object-fit: cover;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(199, 179, 179);
+}
+
+.name{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(68, 56, 56);
+}
+
+.name p{
+  margin: 0;
+  font-family: 'Poppins';
+  font-weight: bold;
+}
+
+
+.pricelist .text{
+  font-family: 'Poppins';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: rgb(104, 94, 94);
+}
+ul{
+  padding: 0;
+}
+li{
+  list-style: none;
+ }
+
+.pricelist{
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 40px;
+}
+
+.single, .couple{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pl{
+  padding: 4px 26.5px;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  background-color: rgb(199, 179, 179);
+  border: none;
+  margin-bottom: 10px;
+}
+
+.sc{
+  font-family: 'Poppins';
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: rgb(104, 94, 94);
+  font-size: 26px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 46px;
+
+}
+
+.contact button{
+  font-weight: 400;
+  font-size: 14px;
+
+}
+.fa-brands fa-whatsapp{
+  color: black;
+  size: 30px;
+}
+
+.call img{
+  width: 100%;
+  padding: 0 4px;
+}
+
+.call{
+  background-color: white;
+  border: 2px solid rgb(199, 179, 179);
+  cursor: pointer;
+
+}
+
+.call:active{
+  background-color: rgb(199, 179, 179);
+}
+
+.link{
+  gap : 22px;
+  display: flex;
+}
+
+.intro{
+  color: rgb(104, 94, 94);
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Poppins';
+  margin-bottom: 14px;
+}
