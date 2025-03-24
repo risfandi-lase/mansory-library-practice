@@ -104,14 +104,14 @@ nav{
   display: flex;
   align-items: center;
   flex-direction: column;
-  color: rgb(68, 56, 56);
+  color: white;
 }
 
 .name p{
   margin: 0;
   font-family: 'Poppins';
   font-weight: bold;
-  color: white;
+  
 }
 
 
